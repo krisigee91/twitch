@@ -1,0 +1,54 @@
+<!--Always wrap your code in html-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--Use this to add the title on the tab in the browser-->
+    <title>Twitch</title>
+    
+    <!--In order to user bootstrap classes, you have to add boot strap links which can be found here https://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
+    <!-- Latest compiled and minified CSS *from bootstrap*-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Always place your custome style sheet after the bootstrap links or your styles will get over written-->
+    <!--Code reads from top to bottom-->
+    <link href="twitch.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <!--You can use the header tag here-->
+        <header id="header" class="text-center">
+            <h1>Use the TwitchTV JSON API</h1>
+            <h2><a href="https://www.twitch.tv/freecodecamp" target="_blank">Free Code Camp</a></h2>
+        </header>
+
+        <div id="channels-container">
+            <div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <!--Logo is a img-->
+                    </div>
+
+                    <div class="col-md-4">
+                        Display Name:
+                    </div>
+
+                    <div class="col-md-4">
+                        Status:
+                    </div>
+                </div>
+
+                <div id="followerInfo">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Use this to access your js files (place at the head or before the body closing tag)-->
+    <!-- jQuery library *from bootstrap*-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript *from bootstrap*-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js-twitch.js" type="text/javascript"></script>
+</body>
+</html>
